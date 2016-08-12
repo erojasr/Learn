@@ -1,0 +1,14 @@
+<form name="myForm" action="" method="post">
+    <div class="form-group" ng-class="{'has-error':myForm.favMeat.$invalid}" show-errors='{showSuccess:true}'>
+        <label class="control-label" for="favMeat">Your favorite food</label>
+        <input type="text" name="favMeat" ng-model="favMeat" class="form-control" id="favMeat" placeholder="Your Favorite Meat" required>
+        <p class="help-block" ng-if="myForm.favMeat.$error.required">
+            Este campo es obligatorio...
+        </p>
+    </div>
+
+
+    <p>
+      {{ favMeat }}
+    </p>
+</form>

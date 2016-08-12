@@ -1,0 +1,48 @@
+-- label
+-- input {text, select, radio, check, etc}
+
+----------------------------------------
+-- if -> text
+class -> calendar
+id
+
+-- if -> select
+id
+class -> {multiselect or simple}
+sql extraccion
+id
+value
+multicombo
+
+-- if-> radio
+id
+class
+value
+
+-- if -> check
+id
+class
+value
+group
+----------------------------------------
+
+-- validacion
+-- posicion
+
+
+------ REQ -------
+pagina login
+credenciales de usuario
+##
+pagina principal (reportes asignados)
+lista de reportes que tiene asignado esa persona
+##
+pagina generadora reporte
+filtros y grid, opciones de descarga
+##
+pagina permisos (admin)
+asignacion de permisos a usuario
+##
+pagina constructora(admin)
+creacion de filtros y datos reportes existentes y nuevos
+

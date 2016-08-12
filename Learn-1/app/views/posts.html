@@ -1,0 +1,27 @@
+<div class="well">
+    <table>
+        <tr>
+            <th>
+                id
+            </th>
+            <th>
+                title
+            </th>
+            <th>
+                body
+            </th>
+        </tr>
+        <tr ng-repeat="post in posts">
+            <td>
+                {{ post.id }}
+            </td>
+            <td>
+                {{ post.title }}
+            </td>
+            <td>
+                {{ post.body }}
+            </td>
+        </tr>
+    </table>
+
+</div>

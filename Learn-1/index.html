@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="myapp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,12 +19,26 @@
     <script src="app/lib/angular.min.js"></script>
   </head>
   <body>
+      <div class="container">
 
-      <input type="text" ng-model="favMeat" class="form-control" id="fmeat" placeholder="Your Favorite Meat">
-      <p>
-        {{ favMeat }}
-      </p>
+          <h2>Learn</h2>
 
+          <ul class="nav nav-pills">
+              <li role="presentation" class="active"><a href="#/">Home</a></li>
+              <li role="presentation"><a href="#/posts">posts</a></li>
+              <li role="presentation"><a href="#">Messages</a></li>
+          </ul>
+
+          <div ng-view>
+
+          </div>
+
+      </div>
+
+
+      <script src="app/app.js"></script>
+      <script src="app/services/service_rest.js"></script>
+      <script src="app/controller/controller_form.js"></script>
 
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
