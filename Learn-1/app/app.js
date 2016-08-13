@@ -1,11 +1,12 @@
 var app = angular.module("myapp", [
     'myapp.service_rest',
-    'myapp.controller_form'
+    'myapp.controller_form',
+    'ngRoute'
 ]);
 
 app.config(['$routeProvider',function($routeProvider){
 
-    var viewBase = 'app/views/';
+    var viewBase = '/app/views/';
 
     $routeProvider
         .when('/',{
